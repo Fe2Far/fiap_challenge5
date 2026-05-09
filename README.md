@@ -4,7 +4,7 @@ Este repositório contém a solução analítica para o Datathon da Fase 5 da Po
 
 ## 📈 Status do Projeto
 - [x] **Fase 1: Limpeza e Preparação de Dados** - Concluída
-- [ ] **Fase 2: Análise Exploratória (EDA)** - Pendente
+- [x] **Fase 2: Análise Exploratória (EDA)** - Concluída
 - [ ] **Fase 3: Modelagem Preditiva** - Pendente
 - [ ] **Fase 4: Aplicação Streamlit** - Pendente
 - [ ] **Fase 5: Storytelling e Pitch** - Pendente
@@ -28,9 +28,13 @@ pip install pandas openpyxl jupyter matplotlib seaborn scikit-learn
 ```
 
 ### 3. Execução
-Para reproduzir a limpeza de dados:
+Para reproduzir a limpeza de dados (Fase 1):
 1. Garanta que a base bruta (`BASE DE DADOS PEDE 2024 - DATATHON.xlsx`) esteja em `local_data/DATATHON/`.
 2. Execute o notebook `notebooks/01_data_cleaning.ipynb`.
+
+Para visualizar a Análise Exploratória (Fase 2):
+1. Certifique-se de que o arquivo limpo `dataset_limpo.csv` foi gerado na Fase 1 e está em `local_data/`.
+2. Execute o notebook `notebooks/02_eda_e_business.ipynb`.
 
 ## 🛡️ Governança de Dados
 A pasta `local_data/` está configurada no `.gitignore` para garantir que dados brutos e arquivos PDF de descrição do projeto não sejam enviados para repositórios públicos, respeitando a privacidade dos dados da associação.
