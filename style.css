@@ -1,0 +1,46 @@
+@page {
+    size: A4;
+    margin: 2cm;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+}
+h1 {
+    font-size: 18pt;
+    color: #1a5276;
+    text-align: center;
+    margin-bottom: 5px;
+}
+h2 {
+    font-size: 14pt;
+    color: #2980b9;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+h3 {
+    font-size: 12pt;
+    color: #2c3e50;
+    margin-top: 15px;
+}
+p {
+    margin-bottom: 10px;
+}
+strong {
+    color: #000;
+}
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+}
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
