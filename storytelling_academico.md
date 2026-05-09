@@ -6,6 +6,10 @@
 ## Resumo
 Este relatório descreve detalhadamente o desenvolvimento de uma solução analítica e preditiva focada em identificar fatores de risco e prever a defasagem escolar de alunos atendidos pela Associação Passos Mágicos. Utilizando a base de dados histórica (foco em 2022), aplicou-se uma metodologia de Data Science contemplando Data Wrangling, Análise Exploratória de Dados (EDA) e Machine Learning (Random Forest).
 
+**Links Oficiais do Projeto:**
+- **Repositório GitHub:** [https://github.com/Fe2Far/fiap_challenge5](https://github.com/Fe2Far/fiap_challenge5)
+- **Aplicação Interativa (Streamlit):** [https://fiapchallenge5-rm365970.streamlit.app](https://fiapchallenge5-rm365970.streamlit.app)
+
 ---
 
 ## 1. Introdução

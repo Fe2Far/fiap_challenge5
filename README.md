@@ -4,7 +4,7 @@ Este repositório contém a solução analítica para o Datathon da Fase 5 da Po
 
 ## 🔗 Links Oficiais da Entrega
 - **Aplicação Web (Streamlit):** [https://fiapchallenge5-rm365970.streamlit.app/](https://fiapchallenge5-rm365970.streamlit.app/)
-- **Apresentação Gerencial:** `storytelling.pdf` na raiz do projeto.
+- **Apresentação Gerencial:** `rm365970_passosmagicos_storytelling.pdf` na raiz do projeto.
 
 ## 📈 Status do Projeto
 - [x] **Fase 1: Limpeza e Preparação de Dados** - Concluída
@@ -61,10 +61,10 @@ pip install pandas numpy openpyxl jupyter matplotlib seaborn scikit-learn joblib
 
 #### Fase 5: Geração da Apresentação Executiva (PDF)
 1. O relatório técnico com todos os insights e gráficos foi compilado no arquivo `storytelling_academico.md`.
-2. Para gerar/atualizar os gráficos e o PDF final da entrega (`storytelling.pdf`), execute:
+2. Para gerar/atualizar os gráficos e o PDF final da entrega (`rm365970_passosmagicos_storytelling.pdf`), execute:
    ```bash
    python scripts/export_charts.py
-   python -c "import markdown, weasyprint; html = markdown.markdown(open('storytelling_academico.md').read()); css = weasyprint.CSS('style.css'); weasyprint.HTML(string=html, base_url='.').write_pdf('storytelling.pdf', stylesheets=[css])"
+   python -c "import markdown, weasyprint; html = markdown.markdown(open('storytelling_academico.md').read()); css = weasyprint.CSS('style.css'); weasyprint.HTML(string=html, base_url='.').write_pdf('rm365970_passosmagicos_storytelling.pdf', stylesheets=[css])"
    ```
 
 ## 🛡️ Governança de Dados
