@@ -2,17 +2,24 @@
 
 Este repositório contém a solução analítica para o Datathon da Fase 5 da PosTech FIAP, focado na Associação Passos Mágicos. O objetivo é analisar o impacto educacional e desenvolver modelos preditivos para identificar riscos de defasagem dos alunos.
 
+## 🔗 Links Oficiais da Entrega
+- **Aplicação Web (Streamlit):** [INSIRA SEU LINK AQUI]
+- **Pitch (Vídeo no YouTube):** [INSIRA SEU LINK AQUI]
+- **Apresentação Gerencial:** Arquivo `.pdf` ou `.ppt` na raiz do projeto.
+
 ## 📈 Status do Projeto
 - [x] **Fase 1: Limpeza e Preparação de Dados** - Concluída
 - [x] **Fase 2: Análise Exploratória (EDA)** - Concluída
 - [x] **Fase 3: Modelagem Preditiva** - Concluída
-- [ ] **Fase 4: Aplicação Streamlit** - Pendente
-- [ ] **Fase 5: Storytelling e Pitch** - Pendente
+- [x] **Fase 4: Aplicação Streamlit** - Concluída
+- [x] **Fase 5: Storytelling e Pitch** - Concluída
 
 ## 📁 Estrutura do Repositório
 - `notebooks/`: Contém os Notebooks Jupyter das fases do projeto.
 - `scripts/`: Scripts Python utilitários.
-- `local_data/`: (Ignorado pelo Git) Contém os dados brutos, artefatos gerados (como `.csv` e `.pkl`) e playbooks de execução local.
+- `models/`: Modelo de Machine Learning treinado (`.pkl`).
+- `app.py` e `requirements.txt`: Arquivos para deploy da aplicação no Streamlit Community Cloud.
+- `local_data/`: (Ignorado pelo Git) Contém os dados brutos e playbooks de execução local.
 
 ## 🚀 Como Iniciar
 
@@ -24,7 +31,7 @@ Este repositório contém a solução analítica para o Datathon da Fase 5 da Po
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-pip install pandas openpyxl jupyter matplotlib seaborn scikit-learn joblib
+pip install pandas openpyxl jupyter matplotlib seaborn scikit-learn joblib streamlit
 ```
 
 ### 3. Execução
@@ -38,7 +45,10 @@ Para visualizar a Análise Exploratória (Fase 2):
 
 Para gerar o Modelo Preditivo (Fase 3):
 1. Execute o notebook `notebooks/03_machine_learning.ipynb`.
-2. O modelo será treinado e salvo como `modelo_risco_rf.pkl` no diretório `local_data/` para uso posterior na aplicação Streamlit.
+2. O modelo será treinado e salvo na pasta `models/` para uso posterior na aplicação Streamlit.
+
+Para rodar o Aplicativo Streamlit (Fase 4):
+1. Execute o comando `streamlit run app.py` no seu terminal.
 
 ## 🛡️ Governança de Dados
 A pasta `local_data/` está configurada no `.gitignore` para garantir que dados brutos e arquivos PDF de descrição do projeto não sejam enviados para repositórios públicos, respeitando a privacidade dos dados da associação.
